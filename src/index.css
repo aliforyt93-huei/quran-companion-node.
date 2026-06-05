@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Scheherazade New", "Amiri", serif;
+  --font-sans: "Outfit", "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --font-display: "Playfair Display", serif;
+  --font-quran: "Amiri Quran", "Scheherazade New", "Amiri", serif;
+  
+  --color-indigo-primary: #818cf8;
+  --color-indigo-deep: #4338ca;
+  --color-bg-deep: #0a0514;
+}
+
+@layer base {
+  html, body, #root {
+    @apply bg-transparent text-white antialiased overflow-x-hidden font-sans;
+    background-color: transparent !important;
+  }
+
+  /* Custom scrollbar styles */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-white/5;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/20 rounded-full hover:bg-white/40 transition-colors;
+  }
+
+  /* Hide scrollbar entirely for scrollbar-none or no-scrollbar utility classes */
+  .scrollbar-none::-webkit-scrollbar,
+  .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .scrollbar-none,
+  .no-scrollbar {
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important;     /* Firefox */
+  }
+}
+
+.atmosphere-gradient {
+  background: 
+    radial-gradient(circle at 50% 30%, #1e1b4b 0%, transparent 70%),
+    radial-gradient(circle at 80% 80%, #4338ca 0%, transparent 50%),
+    radial-gradient(circle at 10% 20%, #312e81 0%, transparent 40%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scroll-mask {
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* ==========================================================
+   Sepia Theme Overrides and Color Adjustments
+   - Maps light colours and whites to clean, highly legible dark
+     brown and warm charcoal shades (#3e2723 and #5c483a).
+   - Resolves contrast/readability issues for SVG and text icons.
+   ========================================================== */
+
+.theme-sepia {
+  color: #3e2723 !important;
+}
+
+/* Base Headings and Elements in Sepia */
+.theme-sepia h1,
+.theme-sepia h2,
+.theme-sepia h3,
+.theme-sepia h4,
+.theme-sepia h5,
+.theme-sepia h6 {
+  color: #3e2723 !important;
+}
+
+/* Force elements with light text classes to dark readable hues */
+.theme-sepia .text-white,
+.theme-sepia .text-\[\#fcf8f2\],
+.theme-sepia .text-\[\#faf6ee\],
+.theme-sepia .text-\[\#fdfcfb\],
+.theme-sepia .text-pink-50,
+.theme-sepia .text-purple-50,
+.theme-sepia .text-indigo-50,
+.theme-sepia .text-teal-50,
+.theme-sepia .text-blue-50,
+.theme-sepia .text-slate-50,
+.theme-sepia .text-amber-50,
+.theme-sepia .text-neutral-50,
+.theme-sepia .text-neutral-100,
+.theme-sepia .text-neutral-200,
+.theme-sepia .text-\[\#ebf3f1\],
+.theme-sepia .text-emerald-50,
+.theme-sepia .text-zinc-50,
+.theme-sepia .text-stone-50 {
+  color: #3e2723 !important;
+}
+
+/* Shaded secondary white text and info utilities */
+.theme-sepia .text-white\/90,
+.theme-sepia .text-white\/85,
+.theme-sepia .text-white\/80,
+.theme-sepia .text-white\/75,
+.theme-sepia .text-white\/70,
+.theme-sepia .text-white\/65,
+.theme-sepia .text-white\/60,
+.theme-sepia .text-neutral-300,
+.theme-sepia .text-neutral-400,
+.theme-sepia .text-gray-300,
+.theme-sepia .text-gray-400,
+.theme-sepia .text-zinc-300,
+.theme-sepia .text-zinc-400,
+.theme-sepia .text-indigo-100,
+.theme-sepia .text-indigo-200,
+.theme-sepia .text-indigo-300,
+.theme-sepia .text-indigo-400,
+.theme-sepia .text-teal-400,
+.theme-sepia .text-emerald-100,
+.theme-sepia .text-emerald-400,
+.theme-sepia .text-purple-400,
+.theme-sepia .text-\[\#caae7a\] {
+  color: #5c483a !important;
+}
+
+/* Tertiary/Opaque white or pale texts */
+.theme-sepia .text-white\/50,
+.theme-sepia .text-white\/45,
+.theme-sepia .text-white\/40,
+.theme-sepia .text-white\/30,
+.theme-sepia .text-white\/20,
+.theme-sepia .text-neutral-500,
+.theme-sepia .text-neutral-600,
+.theme-sepia .text-indigo-400\/80,
+.theme-sepia .text-\[\#a2b0ac\],
+.theme-sepia .text-emerald-400\/80 {
+  color: rgba(92, 72, 58, 0.75) !important;
+}
+
+/* Border styling in Sepia for custom glass-panels or line indicators */
+.theme-sepia .border-white\/5,
+.theme-sepia .border-white\/10,
+.theme-sepia .border-white\/15,
+.theme-sepia .border-white\/20,
+.theme-sepia .border-neutral-800,
+.theme-sepia .border-neutral-700,
+.theme-sepia .border-\[\#2d5048\]\/25,
+.theme-sepia .border-\[\#2d5048\]\/30 {
+  border-color: rgba(62, 39, 35, 0.15) !important;
+}
+
+/* Hover and active text colors override */
+.theme-sepia .hover\:text-white:hover,
+.theme-sepia .hover\:text-indigo-400:hover,
+.theme-sepia .hover\:text-\[\#caae7a\]:hover {
+  color: #3e2723 !important;
+}
+
+/* Glass panel background elements in Sepia */
+.theme-sepia .glass-panel,
+.theme-sepia .bg-white\/5,
+.theme-sepia .bg-white\/10,
+.theme-sepia .bg-white\/20,
+.theme-sepia .bg-white\/\[0\.02\],
+.theme-sepia .bg-white\/\[0\.05\] {
+  background-color: rgba(252, 248, 242, 0.85) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.theme-sepia .hover\:bg-white\/10:hover,
+.theme-sepia .hover\:bg-white\/20:hover {
+  background-color: rgba(120, 53, 4, 0.08) !important;
+}
+
+/* Modal overlays and cards */
+.theme-sepia select,
+.theme-sepia input,
+.theme-sepia textarea {
+  color: #3e2723 !important;
+  background-color: #faf6ee !important;
+  border-color: rgba(62, 39, 35, 0.2) !important;
+}
+
+.theme-sepia select option {
+  background-color: #faf6ee !important;
+  color: #3e2723 !important;
+}
+
+/* Scrollbar tweaks */
+.theme-sepia .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(120, 53, 4, 0.04) !important;
+}
+
+.theme-sepia .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(120, 53, 4, 0.15) !important;
+}
+
+.theme-sepia .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 53, 4, 0.3) !important;
+}

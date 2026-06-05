@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Local setup and dynamic database files
+admin-setup-password.txt
+admins.json
+rag_documents.json
+rag_settings.json
+surah_pages.json
+.seo-cache/

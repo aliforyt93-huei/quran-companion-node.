@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pg-about",
+    "slug": "about",
+    "title": "About Al-Mualim Scholar Gateway",
+    "content": "# About Al-Mualim: The Companion AI Islamic Scholar\n\nWelcome to **Al-Mualim** (المعلم), a state-of-the-art Voice-First Quranic study Companion and Interactive Scholar Platform. Our portal combines ancient tradition with advanced modern artificial intelligence to grant researchers, believers, and students of knowledge pristine entry into the wisdom of the Quran.\n\n## Our Scholarly Mission\n\nOur mission is to establish a safe, eye-comforting, and authoritative medium for understanding the Holy Quran. Al-Mualim grounds its insights strictly in traditional scholarly consensus (ijma') and classical reference exegesis (Tafseer), including:\n- **Tafsir Ibn Kathir** for traditional historical narration.\n- **Tafsir al-Jalalayn** for linguistic precision and sentence matching.\n- **Maariful Quran** for contemporary moral guidance.\n\n## Core Technologies we employ\n\n1. **High-Fidelity Audio Recitations**: Syncing beautiful readings from prestigious reciters under varied customizable display interfaces to optimize memory and absorption.\n2. **Voice-First AI hotline**: Accessing high-speed real-time bidirectional audio streams to enable oral learning, listening checks, and reflective scholarly counseling.\n3. **Crawlable SEO Pre-rendering**: Preserving advanced breadcrumbs, schema structures, and optimized exegesis summaries to allow global seekers to discover beneficial answers easily.\n\n*May Allah bless your path of educational exploration and spiritual devotion. Wa Allahu A'lam (And Allah knows best).*",
+    "status": "published",
+    "seoTitle": "About Al-Mualim Islamic Portal - Quran AI Companion Guidance",
+    "seoDescription": "Discover the vision of Al-Mualim, a state-of-the-art interactive Quranic study gateway combining classical Tafseer commentaries with modern companion AI tools.",
+    "seoKeywords": "al-mualim quran companion, classical tafsir ibn kathir, islamic quran study, quran scholar bot",
+    "seoH1": "Al-Mualim Scholar Portal: Merging Classical Excellence with Modern Guidance",
+    "seoRobots": "index, follow",
+    "sitemapPriority": "0.9",
+    "created": "2026-05-22T12:00:00.000Z",
+    "modified": "2026-05-22T12:00:00.000Z"
+  },
+  {
+    "id": "pg-study-plan",
+    "slug": "study-guidelines",
+    "title": "Noble Quran Daily Reflection & Study Plan",
+    "content": "# Daily Quranic Meditation & Systematic Reflection Guide\n\nApproaching the Book of Allah requires organization, high focus, and mindful presence. Here is a scientifically-designed daily program to guide your progress.\n\n## The Three pillars of Daily Progress\n\n### 1. Active Listening and Memorization\nEstablish an ambient space utilizing the **Warm Sepia** display theme to avoid eye-strain. Select your favorite reciter and adjust the *Playback Speed* according to your recitation comfort level. Listen continuously while monitoring page translations.\n\n### 2. Analytical Exegesis (Tafseer) Review\nActivate the **Tafseer mode** to expand linguistic root definitions. Take notes of matched Arabic terms and review scholarly exegesis details (e.g., historical context or revelation reasons) for each verse.\n\n### 3. Voice Consultation with the Companion Scholar\nLaunch the **Al-Mualim Voice Hotline**. Talk aloud, ask complex questions about your study verse, reflect on translation nuances, and ask for practical ways to live out the moral commandments discovered.\n\n## Simple Weekly Checklist\n- [ ] Recite a selected Surah at minimum once with full focus.\n- [ ] Discuss 3 key concepts with AI Al-Mualim.\n- [ ] Memorize 1 core Arabic vocabulary term from the root terms analyzer.\n- [ ] Keep a log of your active bookmarks and daily progress.",
+    "status": "published",
+    "seoTitle": "Quran Daily Reflection Plan & Study Guidelines - Al-Mualim",
+    "seoDescription": "Learn how to establish a daily Quranic study program using active translation visualizer, vocal playback, and traditional Tafseer reflection tools.",
+    "seoKeywords": "daily quran reflection, systematic quran study plan, learn quran online, al-mualim guidelines",
+    "seoH1": "Quranic Spiritual Reflection: Establishing a Systematic Daily Program",
+    "seoRobots": "index, follow",
+    "sitemapPriority": "0.8",
+    "created": "2026-05-22T12:00:00.000Z",
+    "modified": "2026-05-22T12:00:00.000Z"
+  }
+]

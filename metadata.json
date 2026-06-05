@@ -1,0 +1,10 @@
+{
+  "name": "Quran Tilawat - Immersive Spiritual Experience",
+  "description": "An immersive Quran recitation app featuring real-time ayah highlighting, multiple world-class reciters, English translations, atmospheric background visuals, an intelligent Islamic Quran AI Bot for tafseer, and a comprehensive SEO Scholarly Study Studio with JSON-LD schema exports.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
